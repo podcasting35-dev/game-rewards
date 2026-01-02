@@ -1,0 +1,182 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>$500 Gift Card Promotion | USA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+  background:#eef2f7;
+}
+.site{
+  max-width:460px;
+  margin:auto;
+  background:#fff;
+  min-height:100vh;
+  box-shadow:0 12px 40px rgba(0,0,0,.15);
+}
+.nav{
+  display:flex;
+  justify-content:space-between;
+  padding:14px 18px;
+  border-bottom:1px solid #e5e9f0;
+}
+.logo{font-weight:800;color:#0a3cff}
+.badge{
+  font-size:12px;
+  color:#16a34a;
+  font-weight:600;
+}
+
+.hero{
+  background:linear-gradient(135deg,#0a3cff,#1e90ff);
+  color:#fff;
+  text-align:center;
+  padding:30px 20px;
+}
+.hero h1{font-size:42px;margin:0}
+.hero p{margin-top:10px;font-size:15px;opacity:.95}
+
+.content{padding:22px}
+h2{margin-top:0;font-size:22px}
+
+.steps{padding:0;margin:16px 0}
+.steps li{
+  list-style:none;
+  margin-bottom:12px;
+  font-size:14px;
+}
+.steps li::before{
+  content:"✔ ";
+  color:#0a3cff;
+  font-weight:bold;
+}
+
+.note{
+  font-size:13px;
+  color:#555;
+  background:#f8fafc;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+}
+
+.cta{
+  display:block;
+  background:#16a34a;
+  color:#fff;
+  padding:16px;
+  text-align:center;
+  font-size:18px;
+  font-weight:700;
+  border-radius:12px;
+  text-decoration:none;
+  cursor:pointer;
+  margin-top:18px;
+}
+.cta:active{transform:scale(.98)}
+
+.redirect-box{
+  display:none;
+  margin-top:14px;
+  background:#fff3cd;
+  color:#856404;
+  padding:12px;
+  border-radius:10px;
+  text-align:center;
+  font-size:14px;
+}
+
+.footer{
+  font-size:11px;
+  color:#777;
+  padding:18px;
+  border-top:1px solid #eee;
+  background:#fafafa;
+  text-align:center;
+}
+</style>
+
+<script>
+function startDownload(){
+  let seconds = 3;
+  const box = document.getElementById("redirectBox");
+  const counter = document.getElementById("counter");
+  const btn = document.getElementById("downloadBtn");
+
+  btn.style.display = "none";
+  box.style.display = "block";
+  counter.innerText = seconds;
+
+  const timer = setInterval(() => {
+    seconds--;
+    counter.innerText = seconds;
+    if(seconds <= 0){
+      clearInterval(timer);
+      window.location.href = "https://singingfiles.com/show.php?l=0&u=2475982&id=73943&tracking_id=";
+    }
+  }, 1000);
+}
+</script>
+</head>
+
+<body>
+
+<div class="site">
+
+  <div class="nav">
+    <div class="logo">GameRewards™</div>
+    <div class="badge">✔ USA Promotion</div>
+  </div>
+
+  <div class="hero">
+    <h1>$500 Gift Card</h1>
+    <p>Play Games • Earn Entries • Win Rewards</p>
+  </div>
+
+  <div class="content">
+    <h2>How to Participate</h2>
+    <p style="font-size:14px;color:#555">
+      Follow the steps below to qualify for a chance to win a
+      <strong>$500 Gift Card</strong>.
+    </p>
+
+    <!-- ✅ 4 STEPS -->
+    <ul class="steps">
+      <li>Download the featured game from our partner</li>
+      <li>Install and open the game successfully</li>
+      <li>Play the game at least <strong>3 times</strong></li>
+      <li>Complete in-game requirements to receive an entry</li>
+    </ul>
+
+    <div class="note">
+      🎮 This is a limited-time promotional campaign available to users
+      in the United States. Rewards are promotional and subject to
+      verification by the partner platform.
+    </div>
+
+    <!-- DOWNLOAD BUTTON -->
+    <div id="downloadBtn" class="cta" onclick="startDownload()">
+      Download Game & Continue
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div id="redirectBox" class="redirect-box">
+      ⏳ Preparing download… Redirecting in
+      <strong><span id="counter">3</span></strong> seconds
+    </div>
+  </div>
+
+  <div class="footer">
+    Independent promotional landing page.<br>
+    Gift card rewards are promotional and not guaranteed.<br>
+    Not affiliated with Google, Apple, or the game publisher.
+  </div>
+
+</div>
+
+</body>
+</html>
